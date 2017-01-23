@@ -29,9 +29,9 @@ local target = GetCurrentTarget()
 			end
 		end
 		if HeimMenu.UseIgnite.Ign:Value() and Ignite then
-			if Ready(Ignite) and 20*GetLevel(myHero)+50 > GetCurrentHP(target)+GetDmgShield(target)+GetHPRegen(target)*3 and ValidTarget(target, 600) then
-				CastTargetSpell(target, Ignite)
-			end
+		if Ready(Ignite) and 20*GetLevel(myHero)+50 > GetCurrentHP(target)+GetDmgShield(target)+GetHPRegen(target)*3 and ValidTarget(target, 600) then
+CastTargetSpell(target, Ignite)
+end
 		end
 	end
 )
